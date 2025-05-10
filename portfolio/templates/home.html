@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Santo Código</title>
+</head>
+<body>
+    <section>
+        <h1>Sobre mim</h1>
+        <p>Sou Cláudio dos Santos, desenvolvedor Python. Crio soluções sob medida que transformam processos manuais e desorganizados em fluxos simples, visuais e escaláveis. Este site, inclusive, foi desenvolvido inteiramente com Django — porque acredito em mostrar na prática o que sei fazer.
+        <br>
+        Desenvolvo automações com e sem inteligência artificial, pipelines de dados, dashboards e bots que entregam valor real. Meu foco está em eficiência, clareza e impacto.</p>
+    </section>
+    <section>
+        <h2>Habilidades</h2>
+        <ul>
+            {% for chave, habilidade in habilidades.items %}
+                <li>{{habilidade.nome}}</li>
+            {% endfor %}
+        </ul>
+    </section>
+    <section>
+        <h2>Contatos</h2>
+        <p>Email: cadossantos@proton.me</p>
+        <p>Linkedin: https://www.linkedin.com/in/cadossantos/</p>
+    </section>
+</body>
+</html>
+
+
+<!-- <li>Python (Web, Dados, Bots)</li>
+<li>Django (backend + frontend integrado)</li>
+<li>Streamlit (dashboards e interfaces rápidas)</li>
+<li>LangGraph & LLMs (copilotos inteligentes e IA)</li>
+<li>Scramp e APIS</li>
+<li>Streamlit (dashboards e interfaces rápidas)</li>
