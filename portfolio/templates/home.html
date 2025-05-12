@@ -1,37 +1,48 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Santo Código</title>
-</head>
-<body>
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Home | Portifólio {% endblock %}
+
+{% block content %}
     <section>
-        <h1>Sobre mim</h1>
-        <p>Sou Cláudio dos Santos, desenvolvedor Python. Crio soluções sob medida que transformam processos manuais e desorganizados em fluxos simples, visuais e escaláveis. Este site, inclusive, foi desenvolvido inteiramente com Django — porque acredito em mostrar na prática o que sei fazer.
-        <br>
-        Desenvolvo automações com e sem inteligência artificial, pipelines de dados, dashboards e bots que entregam valor real. Meu foco está em eficiência, clareza e impacto.</p>
-    </section>
-    <section>
+        <div class="sobre">
+            <div class="sobre-mim">
+                <h1>Sobre mim</h1>
+                <br>
+                <p>Sou Cláudio dos Santos, desenvolvedor Python. Crio soluções sob medida que transformam processos manuais e desorganizados em fluxos simples, visuais e escaláveis. Este site, inclusive, foi desenvolvido inteiramente com Django — porque acredito em mostrar na prática o que sei fazer.
+                <br>
+                Desenvolvo automações com e sem inteligência artificial, pipelines de dados, dashboards e bots que entregam valor real. Meu foco está em eficiência, clareza e impacto.</p>
+            </div>
+            <div class="sobre-imagem">
+              <img src="{% static 'img/img.webp' %}" alt="Foto do Cláudio" class="foto">
+            </div>
+        </div>
+    </section>    
+    <section class="skills-section">
         <h2>Habilidades</h2>
-        <ul>
-            {% for chave, habilidade in habilidades.items %}
-                <li>{{habilidade.nome}}</li>
+        <br>
+        <ul class="skills-list">
+            {% for nome, dados in habilidades.items %}
+                <li class="skill-item" >{{ dados.nome }}</li>
             {% endfor %}
         </ul>
     </section>
-    <section>
+    <section id="projetos" class="projects-section">
+        <h1>Meus projetos</h1>
+        <p>Nesta seção, compartilho alguns dos projetos que desenvolvi ou contribuí como desenvolvedor Python. Cada um deles reflete minha busca por soluções eficientes, escaláveis e com impacto real — seja na automação de tarefas, no desenvolvimento de interfaces seguras e acessíveis, ou na criação de sistemas completos. Todos os projetos aqui apresentados foram pensados com foco em clareza, valor prático e boas práticas de desenvolvimento.</p>
+    </section>
+    <section >
+        <ul  class="project-list">
+            {% for chave, projeto in projetos.items %}
+                <li  class="project-item">
+                    <a href="{% url 'detalhes_projeto' id_projeto=chave %}">{{projeto.titulo}}</a>
+                </li>
+            {% endfor %}
+        </ul>
+    </section>
+    <section id="contato">
         <h2>Contatos</h2>
         <p>Email: cadossantos@proton.me</p>
-        <p>Linkedin: https://www.linkedin.com/in/cadossantos/</p>
+        <a href="https://www.linkedin.com/in/cadossantos/" target="_blank">Linkedin</a>
+        <a href="https://github.com/cadossantos/" target="_blank">GitHub</a>
     </section>
-</body>
-</html>
-
-
-<!-- <li>Python (Web, Dados, Bots)</li>
-<li>Django (backend + frontend integrado)</li>
-<li>Streamlit (dashboards e interfaces rápidas)</li>
-<li>LangGraph & LLMs (copilotos inteligentes e IA)</li>
-<li>Scramp e APIS</li>
-<li>Streamlit (dashboards e interfaces rápidas)</li>
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block title %} {{projeto.titulo}} | Portfólio {% endblock %}
+{% block content %}
+    <h1>{{projeto.titulo}}</h1>
+    <section>
+        <h3>Detalhes do projeto</h3>
+        <p>{{projeto.descricao}}</p>
+
+        <h4>Tecnologias utilizadas</h4>
+        <p>{{projeto.tecnologias}}</p>
+
+        <h4>Funcionalidades</h4>
+        <p>{{projeto.funcionalidades}}</p>
+
+        <a href="{{projeto.url}}" target="_blank">Saiba mais</a>
+    </section>
+{% endblock %}
