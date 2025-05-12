@@ -1,0 +1,70 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+*.manifest
+*.spec
+
+# Virtual Environments
+env/
+venv/
+ENV/
+.venv/
+*.env
+
+# VSCode
+.vscode/
+
+# Byte-compiled / cache
+*.log
+*.pot
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+
+# Django stuff:
+*.db
+*.sqlite3
+db.sqlite3
+/media
+/staticfiles
+/static_root
+/media_root
+
+# Secrets
+.env
+*.pem
+*.key
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Jupyter / Colab
+.ipynb_checkpoints/
+
+# PyCharm
+.idea/
+
+# Coverage reports
+htmlcov/
+.coverage
+.tox/
+.nox/
+
+# Migrations (opcional: só ignore se forem locais ou geradas frequentemente)
+*/migrations/__pycache__/
+*/migrations/*.pyc
+*/migrations/*.pyo
+*/migrations/*.pyd
+# */migrations/  ← descomente para ignorar tudo (use com cautela)
+
+# Git itself
+.git/

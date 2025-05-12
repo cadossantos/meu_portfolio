@@ -17,7 +17,7 @@
     --transition: all 0.3s ease;
 }
 body {
-    background: linear-gradient(to right, black, rgb(14, 14, 61));
+    background: linear-gradient(to right, rgb(10, 2, 14), rgb(14, 14, 61));
     font-size: 1.5rem;
     color: #e0e0e0;
     line-height: 1.6;
@@ -142,6 +142,107 @@ section {
     color: white;
     transform: translateY(-3px);
 }
+
+
+/* Contato */
+.mensagens {
+    margin: 20px 0;
+}
+
+.mensagem {
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.mensagem.success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.cont1-contato {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.contato-texto {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.contato-social {
+    display: flex;
+    gap: 1rem;
+    padding-top: 1rem;
+}
+
+
+.contato-social :hover {
+    color: #f8f9fa;
+}
+
+.contato-form {
+    width: 60%;
+    padding-left: 10%;
+}
+
+.form-contato {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 2rem;
+    background: linear-gradient(-11deg, rgba(0, 0, 0, 0.8), rgba(14, 14, 61, 0.6));
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+}
+
+.form-group label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    display: block;
+    color: var(--primary-color);
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: none;
+    border-radius: var(--border-radius);
+    background-color: #1a1a2e;
+    color: #e0e0e0;
+    font-size: 1rem;
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.5);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border: 1px solid var(--primary-color);
+    background-color: #2d2d55;
+}
+
+.botao-enviar {
+    align-self: flex-start;
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.botao-enviar:hover {
+    background-color: var(--secondary-color);
+}
+
+
 
 footer {
     text-align: center;
