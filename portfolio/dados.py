@@ -33,7 +33,7 @@ projetos = {
     },
     'projeto3':{
         'titulo':'Website Institucional Jibóia',
-        'descrição': 'Site institucional desenvolvido em WordPress para a Jibóia, organização que atua com financiamento participativo e consultoria para comunidade filantrópica. O projeto destaca sua missão de fortalecer iniciativas sociais através de parcerias intersetoriais, com enfoque em justiça relacional e feminismo interseccional.',
+        'descricao': 'Site institucional desenvolvido em WordPress para a Jibóia, organização que atua com financiamento participativo e consultoria para comunidade filantrópica. O projeto destaca sua missão de fortalecer iniciativas sociais através de parcerias intersetoriais, com enfoque em justiça relacional e feminismo interseccional.',
         'tecnologias': 'WordPress, HTML/CSS, JavaScript, PHP (para customizações)',
         'funcionalidades': 'Páginas institucionais dinâmicas (Sobre Nós, Serviços), Seção "Ecos do Nosso Trabalho" com depoimentos, Design responsivo e acessível, Integração com formulários de contato, Galeria de parceiros institucionais (Luminate, Ford Foundation, etc.)',
         'url': 'https://jiboia.org'    
