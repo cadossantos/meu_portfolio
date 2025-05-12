@@ -29,7 +29,7 @@ projetos = {
         'descricao':'Automação com Selenium • Engenharia reversa de `.m3u8` • Manipulação de mídia com FFmpeg - Este projeto nasceu como uma solução improvisada e se transformou em um laboratório completo de automação web, raspagem de conteúdo e manipulação de vídeos — tudo feito com Python (e bastante teimosia).',
         'tecnologias':'Python, Selenium + Webdriver-manager, BeutifulSoulp, Requests, FFmpeg',
         'funcionalidades':'Acesso autorizado à plataformas de cursos mediante login e senha válidos, busca de padrões de tags html e css com Regex, exploração de playlists.m3u8, download de arquivos .ts via curl e concatenação com FFmpeg',
-        'url':'https://github.com/cadossantos/educational-video-downloader'
+        'github':'https://github.com/cadossantos/educational-video-downloader'
     },
     'projeto3':{
         'titulo':'Website Institucional Jibóia',

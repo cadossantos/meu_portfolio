@@ -6,7 +6,7 @@
     <section>
         <div class="sobre">
             <div class="sobre-mim">
-                <h1>Sobre mim</h1>
+                <h1 class="page-title">Sobre mim</h1>
                 <br>
                 <p>Sou Cláudio dos Santos, desenvolvedor Python. Crio soluções sob medida que transformam processos manuais e desorganizados em fluxos simples, visuais e escaláveis. Este site, inclusive, foi desenvolvido inteiramente com Django — porque acredito em mostrar na prática o que sei fazer.
                 <br>
@@ -18,7 +18,7 @@
         </div>
     </section>    
     <section class="skills-section">
-        <h2>Habilidades</h2>
+        <h2 class="page-title">Habilidades</h2>
         <br>
         <ul class="skills-list">
             {% for nome, dados in habilidades.items %}
@@ -27,10 +27,9 @@
         </ul>
     </section>
     <section id="projetos" class="projects-section">
-        <h1>Meus projetos</h1>
+        <h1 class="page-title">Meus projetos</h1>
         <p>Nesta seção, compartilho alguns dos projetos que desenvolvi ou contribuí como desenvolvedor Python. Cada um deles reflete minha busca por soluções eficientes, escaláveis e com impacto real — seja na automação de tarefas, no desenvolvimento de interfaces seguras e acessíveis, ou na criação de sistemas completos. Todos os projetos aqui apresentados foram pensados com foco em clareza, valor prático e boas práticas de desenvolvimento.</p>
-    </section>
-    <section >
+        <br>
         <ul  class="project-list">
             {% for chave, projeto in projetos.items %}
                 <li  class="project-item">

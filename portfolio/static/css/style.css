@@ -25,7 +25,12 @@ body {
     flex-direction: column;
     min-height: 100vh;
 }
-
+.page-title {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    position: relative;
+    display: inline-block;
+}
 a {
     color: #88c0d0;
     text-decoration: none;
@@ -36,8 +41,10 @@ a:hover {
 }
 
 header, footer {
-    background-color: #1e1e1e;
+    background-color: #06020f3a;
     padding: 2% 7%;
+    box-shadow: var(--box-shadow);
+
 }
 
 header {
@@ -45,7 +52,8 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 2rem 10rem;
-    background-color: #1e1e1e;
+    background-color: #07041da4;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);;
 }
 
 .branding {
@@ -139,6 +147,7 @@ footer {
     text-align: center;
     font-size: 0.9rem;
     color: #aaaaaa;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);;
 }
 
 .footer-content {
@@ -159,6 +168,20 @@ footer {
     flex-direction: row;
     gap: 1rem;
     padding-top: 1rem;
+}
+
+.footer-link a {
+    color: #ddd;
+    font-size: 1.3rem;
+}
+
+.footer-link a:hover {
+    color: var(--primary-color);
+}
+
+.copyright {
+    color: #ddd;
+    font-size: 0.9rem;
 }
 
 /* Project List */
@@ -195,38 +218,27 @@ footer {
     box-shadow: var(--box-shadow);
 }
 
-.grid-projetos {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+.project-details {
+    margin-bottom: 3rem;
+}
+
+.project-meta {
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
     gap: 2rem;
-    margin: 5% 0;
 }
 
-.projeto-card {
-    background-color: #1e1e1e;
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(136, 192, 208, 0.1);
-    transition: transform 0.2s ease;
+.meta-item {
+    background:  linear-gradient( -11deg, rgb(0, 0, 0), rgba(5, 21, 110, 0.397) );
+    padding: 2rem 4rem;
+    border-radius: var(--border-radius);
 }
 
-.projeto-card:hover {
-    transform: scale(1.01);
-}
-
-.projeto-card h3 {
+.meta-item strong {
+    display: block;
     margin-bottom: 0.5rem;
-    color: #ffffff;
-}
-
-.projeto-card p {
-    margin: 0.5rem 0;
-    color: #cccccc;
-}
-
-.projeto-card a {
-    display: inline-block;
-    margin-top: 1rem;
-    color: #88c0d0;
-    font-weight: bold;
+    color: var(--primary-color);
 }
